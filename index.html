@@ -38,10 +38,11 @@
 
     function initMap() {
       const start = { lat: 52.0, lng: -1.0 };
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: start,
-        zoom: 6,
-      });
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: start,
+      zoom: 6,
+      mapTypeId: 'satellite'
+    });
 
       marker = new google.maps.Marker({
         position: start,
